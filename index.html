@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimesh Furniture | Digital Business Card</title>
+  <meta name="description" content="Nimesh Furniture - Quality Custom Furniture & Modern Woodwork. Showroom & Workshop, Direct Call, WhatsApp & Google Maps Directions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+  <div class="bg-particles" id="particles"></div>
+
+  <main class="page-container">
+    <!-- 3D Tilt Wrapper -->
+    <div class="card-tilt-container" id="tiltContainer">
+      <article class="business-card" id="businessCard">
+        <!-- Glare effect element -->
+        <div class="card-glare" id="cardGlare"></div>
+        <div class="card-border-glow"></div>
+
+        <!-- Card Header with Avatar -->
+        <header class="card-header">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <img src="assets/nimesh_furniture_logo.jpg" alt="Nimesh Furniture Logo" class="avatar-img" id="cardAvatar">
+            <span class="status-indicator" title="Showroom & Workshop Open"></span>
+          </div>
+
+          <div class="header-info">
+            <div class="name-badge-group">
+              <h1 class="person-name" id="cardName">Nimesh Furniture</h1>
+              <span class="verified-badge" title="Verified Business Contact">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </span>
+            </div>
+            <p class="person-title" id="cardTitle">Custom Furniture & Interior Woodwork</p>
+            <p class="person-company" id="cardCompany">
+              <span class="company-dot"></span> Showroom & Manufacturing Workshop
+            </p>
+            <div class="location-tag">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span id="cardLocation">Showroom & Workshop • Sri Lanka</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Quick Action Buttons -->
+        <section class="quick-actions" aria-label="Quick Actions">
+          <button type="button" class="action-btn call-btn" id="btnCall" aria-label="Call Nimesh Furniture">
+            <div class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <span>Call</span>
+          </button>
+
+          <button type="button" class="action-btn whatsapp-btn" id="btnWhatsapp" aria-label="Chat on WhatsApp">
+            <div class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.07-.1-.23-.16-.48-.28z"/>
+              </svg>
+            </div>
+            <span>WhatsApp</span>
+          </button>
+
+          <button type="button" class="action-btn directions-btn" id="btnDirections" aria-label="Visit Locations">
+            <div class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+            </div>
+            <span>Locations</span>
+          </button>
+
+          <button type="button" class="action-btn qr-btn" id="btnOpenQr" aria-label="Show QR Code">
+            <div class="btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-5 5h2v3h-2v-3zm2-5h3v2h-3v-2zm3 3h3v5h-3v-5zm-3 2h2v3h-2v-3z"/>
+              </svg>
+            </div>
+            <span>QR</span>
+          </button>
+        </section>
+
+        <!-- Save Contact Primary CTA -->
+        <div class="primary-cta-container">
+          <button type="button" class="save-contact-btn" id="btnSaveContact">
+            <span class="btn-glow-ring"></span>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
+            <span>Save Contact (vCard)</span>
+          </button>
+        </div>
+
+        <!-- Contact Detail Items -->
+        <section class="contact-details" aria-label="Contact Information">
+          <!-- Phone Item 1 (Primary) -->
+          <div class="detail-card" data-copy="+94 76 288 0521" title="Click to copy primary phone">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Mobile 1 (Primary)</span>
+              <span class="detail-value" id="valPhone1">+94 76 288 0521</span>
+            </div>
+            <div class="card-badges-group">
+              <a href="tel:+94762880521" class="badge-action-btn" title="Call directly" aria-label="Direct dial primary phone">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+              <button class="copy-badge" aria-label="Copy primary phone number">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Phone Item 2 (Secondary) -->
+          <div class="detail-card" data-copy="+94 711 305 717" title="Click to copy secondary phone">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Mobile 2 (Secondary)</span>
+              <span class="detail-value" id="valPhone2">+94 711 305 717</span>
+            </div>
+            <div class="card-badges-group">
+              <a href="tel:+94711305717" class="badge-action-btn" title="Call directly" aria-label="Direct dial secondary phone">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+              <button class="copy-badge" aria-label="Copy secondary phone number">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- WhatsApp Item 1 -->
+          <a href="https://wa.me/94762880521" target="_blank" rel="noopener noreferrer" class="detail-card link-card whatsapp-card" data-copy="+94 76 288 0521" title="Chat on WhatsApp (Primary)">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.07-.1-.23-.16-.48-.28z"/>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">WhatsApp (Primary)</span>
+              <span class="detail-value">+94 76 288 0521</span>
+            </div>
+            <div class="external-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- WhatsApp Item 2 -->
+          <a href="https://wa.me/94711305717" target="_blank" rel="noopener noreferrer" class="detail-card link-card whatsapp-card" data-copy="+94 711 305 717" title="Chat on WhatsApp (Secondary)">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.07-.1-.23-.16-.48-.28z"/>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">WhatsApp (Secondary)</span>
+              <span class="detail-value">+94 711 305 717</span>
+            </div>
+            <div class="external-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Showroom Location Item -->
+          <a href="https://maps.app.goo.gl/9SVKU5zK9Gfm9NVAA" target="_blank" rel="noopener noreferrer" class="detail-card link-card location-card" data-copy="https://maps.app.goo.gl/9SVKU5zK9Gfm9NVAA" title="View Showroom on Google Maps">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Main Showroom</span>
+              <span class="detail-value">Nimesh Furniture Showroom</span>
+            </div>
+            <div class="external-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Workshop / Factory Location Item -->
+          <a href="https://maps.app.goo.gl/zF5H6qtuvRnCE3JS7" target="_blank" rel="noopener noreferrer" class="detail-card link-card location-card" data-copy="https://maps.app.goo.gl/zF5H6qtuvRnCE3JS7" title="View Workshop on Google Maps">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Workshop / Factory</span>
+              <span class="detail-value">Nimesh Furniture Workshop</span>
+            </div>
+            <div class="external-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Facebook Official Page -->
+          <a href="https://web.facebook.com/NimeshFurniture" target="_blank" rel="noopener noreferrer" class="detail-card link-card facebook-card" data-copy="https://web.facebook.com/NimeshFurniture" title="Open Main Facebook Page">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Facebook (Official Page)</span>
+              <span class="detail-value">facebook.com/NimeshFurniture</span>
+            </div>
+            <div class="external-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Facebook Profile (Page 2) -->
+          <a href="https://web.facebook.com/profile.php?id=61560353376609" target="_blank" rel="noopener noreferrer" class="detail-card link-card facebook-card" data-copy="https://web.facebook.com/profile.php?id=61560353376609" title="Open Secondary Facebook Profile">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Facebook (Profile 2)</span>
+              <span class="detail-value">Nimesh Furniture Profile</span>
+            </div>
+            <div class="external-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Custom Orders & Inquiries -->
+          <div class="detail-card" data-copy="+94 76 288 0521" title="Click to copy inquiry contact">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 7h-7L10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+              </svg>
+            </div>
+            <div class="detail-body">
+              <span class="detail-label">Custom Orders & Estimates</span>
+              <span class="detail-value">Woodwork, Living, Bedroom & Office</span>
+            </div>
+            <button class="copy-badge" aria-label="Copy contact number">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- Social Networks Grid -->
+        <footer class="card-footer">
+          <p class="social-title">CONNECT WITH NIMESH FURNITURE</p>
+          <div class="social-links">
+            <a href="https://web.facebook.com/NimeshFurniture" target="_blank" rel="noopener noreferrer" class="social-link social-link-fb" title="Nimesh Furniture - Main Facebook Page" aria-label="Main Facebook Page">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61560353376609" target="_blank" rel="noopener noreferrer" class="social-link social-link-fb" title="Nimesh Furniture - Secondary Facebook Profile" aria-label="Secondary Facebook Profile" style="position: relative;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span class="social-pill-tag">2</span>
+            </a>
+            <a href="https://wa.me/94762880521" target="_blank" rel="noopener noreferrer" class="social-link social-link-wa" title="WhatsApp Chat" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.07-.1-.23-.16-.48-.28z"/>
+              </svg>
+            </a>
+            <a href="https://maps.app.goo.gl/9SVKU5zK9Gfm9NVAA" target="_blank" rel="noopener noreferrer" class="social-link social-link-map" title="Showroom Google Maps" aria-label="Google Maps">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </main>
+
+  <!-- Call Selection Modal -->
+  <div class="modal-overlay" id="callModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseCall" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-header-icon call-icon-bg">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <h2 class="modal-title">Select Number to Call</h2>
+        <p class="modal-subtitle">Choose which line you'd like to dial</p>
+      </div>
+
+      <div class="choice-list">
+        <a href="tel:+94762880521" class="choice-item" id="choiceCall1">
+          <div class="choice-info">
+            <span class="choice-tag primary">Primary Line</span>
+            <span class="choice-number">+94 76 288 0521</span>
+          </div>
+          <span class="choice-btn">Call Now</span>
+        </a>
+
+        <a href="tel:+94711305717" class="choice-item" id="choiceCall2">
+          <div class="choice-info">
+            <span class="choice-tag secondary">Secondary Line</span>
+            <span class="choice-number">+94 711 305 717</span>
+          </div>
+          <span class="choice-btn">Call Now</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Selection Modal -->
+  <div class="modal-overlay" id="whatsappModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseWhatsapp" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-header-icon whatsapp-icon-bg">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.07-.1-.23-.16-.48-.28z"/>
+          </svg>
+        </div>
+        <h2 class="modal-title">Chat on WhatsApp</h2>
+        <p class="modal-subtitle">Choose an account to start messaging</p>
+      </div>
+
+      <div class="choice-list">
+        <a href="https://wa.me/94762880521" target="_blank" rel="noopener noreferrer" class="choice-item" id="choiceWa1">
+          <div class="choice-info">
+            <span class="choice-tag wa-tag">WhatsApp 1 (Primary)</span>
+            <span class="choice-number">+94 76 288 0521</span>
+          </div>
+          <span class="choice-btn wa-btn-action">Chat</span>
+        </a>
+
+        <a href="https://wa.me/94711305717" target="_blank" rel="noopener noreferrer" class="choice-item" id="choiceWa2">
+          <div class="choice-info">
+            <span class="choice-tag wa-tag">WhatsApp 2 (Secondary)</span>
+            <span class="choice-number">+94 711 305 717</span>
+          </div>
+          <span class="choice-btn wa-btn-action">Chat</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Selection Modal -->
+  <div class="modal-overlay" id="locationModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseLocation" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <div class="modal-header-icon location-icon-bg">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <h2 class="modal-title">Visit Our Locations</h2>
+        <p class="modal-subtitle">Select a location to open in Google Maps</p>
+      </div>
+
+      <div class="choice-list">
+        <a href="https://maps.app.goo.gl/9SVKU5zK9Gfm9NVAA" target="_blank" rel="noopener noreferrer" class="choice-item" id="choiceShowroomModal">
+          <div class="choice-info">
+            <span class="choice-tag location-tag-showroom">Main Showroom</span>
+            <span class="choice-number">Nimesh Furniture Showroom</span>
+          </div>
+          <span class="choice-btn map-btn-action">Get Directions</span>
+        </a>
+
+        <a href="https://maps.app.goo.gl/zF5H6qtuvRnCE3JS7" target="_blank" rel="noopener noreferrer" class="choice-item" id="choiceWorkshopModal">
+          <div class="choice-info">
+            <span class="choice-tag location-tag-workshop">Workshop & Factory</span>
+            <span class="choice-number">Nimesh Furniture Workshop</span>
+          </div>
+          <span class="choice-btn map-btn-action">Get Directions</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- QR Code Modal -->
+  <div class="modal-overlay" id="qrModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseQr" aria-label="Close QR Code">&times;</button>
+      <div class="modal-header">
+        <h2 class="modal-title">Scan to Connect</h2>
+        <p class="modal-subtitle">Point your phone camera to scan and save contact</p>
+      </div>
+
+      <div class="qr-canvas-wrapper">
+        <div class="qr-scanner-line"></div>
+        <div id="qrContainer"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="modal-btn-copy" id="btnCopyCardLink">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <span>Copy Card Link</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <div class="toast-icon">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <span class="toast-text" id="toastText">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
